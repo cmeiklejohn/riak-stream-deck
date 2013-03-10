@@ -6,21 +6,141 @@
     <style>
     @import url(stack.css);
 
-    .big {
-      font-size: 128px;
-    }
-
     .caption {
       font-size: 96px;
       text-align: center;
       text-shadow: 0px 2px 6px rgba(0,0,0,.5);
     }
+
+    .authors {
+      color: #ccc;
+      font-size: 32px;
+      text-align: right;
+      margin-right: 50px;
+      list-style-type: none;
+    }
     </style>
   </head>
   <body class="overview">
     <section>
-      <p><b>Stack</b> is a presentation library<br> with scroll-based navigation.
-      <p class="grey">Scroll down to continue.
+    <h1>Checkpoint Stream Processing</h1>
+
+    <ul class="authors">
+      <li>Christopher Meiklejohn</li>
+      <li>Jiangnan Shangguan</li>
+      <li>Adrienne Tran</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Riak Overview</h1>
+    </section>
+
+    <section>
+    <h1>Riak Components</h1>
+
+    <ul>
+      <li>Riak Core</li>
+      <li>Riak KV</li>
+      <li>Riak Pipe</li>
+    </ul>
+    </section>
+
+    <!-- Riak Core -->
+
+    <section>
+    <h1>Riak Core</h1>
+
+    <ul>
+      <li>Consistent hashing</li>
+      <li>Vector clocks</li>
+      <li>Cluster membership</li>
+      <li>Virtual nodes</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Riak Core</h1>
+    <p>Image goes here.</p>
+    </section>
+
+    <!-- Riak KV -->
+
+    <section>
+    <h1>Riak KV</h1>
+
+    <ul>
+      <li>Abstraction over Riak Core</li>
+      <li>Key/Value data store</li>
+      <li>Swappable backends</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Riak KV</h1>
+    <p>Image goes here.</p>
+    </section>
+
+    <!-- Riak Pipe -->
+
+    <section>
+    <h1>Riak Pipe</h1>
+
+    <ul>
+      <li>Abstraction over Riak Core</li>
+      <li>Provides fault-tolerant pipeline processing</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Riak Pipe</h1>
+    <p>Image goes here.</p>
+    </section>
+
+    <!-- Goals -->
+
+    <section>
+    <h1>Goals</h1>
+
+    <ul>
+      <li>Pipeline REST API</li>
+      <li>Checkpointing</li>
+      <li>Benchmarking</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Pipeline REST API</h1>
+
+    <ul>
+      <li>POST /pipelines</li>
+      <li>POST /pipelines/:pipeline_name</li>
+      <li>GET /pipelines/:pipeline_name</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Checkpointing</h1>
+
+    <ul>
+      <li>Checkpoint state at a given interval</li>
+      <li>Store this state in Riak KV</li>
+      <li>Fallbacks read this state</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Benchmarking</h1>
+
+    <ul>
+      <li>Create driver for basho_bench.</li>
+      <li>Benchmark without checkpointing.</li>
+      <li>Benchmark various checkpointing intervals to investigate latency profile.</li>
+    </ul>
+    </section>
+
+    <section>
+    <h1>Questions?</h1>
     </section>
 
     <script src="d3.v2.js?2.7.3"></script>
