@@ -156,6 +156,15 @@
     </section>
 
     <section>
+    <h1>Checkpointing Strategy</h1>
+
+    <ul>
+      <li>Checkpoint state every X seconds in KV</li>
+      <li>n replicas of checkpoint</li>
+      <li>In the event of failure: clockwise CP load/invalidation</li>
+    </ul>
+
+    <section>
     <h1>Benchmarking</h1>
 
     <ul>
